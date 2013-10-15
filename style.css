@@ -434,6 +434,20 @@ header[role=banner] #searchform{
 	width:95%;
 	float:right;
 }
+.comment-body{
+	clear:both;
+	margin-top:1em;
+}
+.hentry .commentlist{
+	margin:0;
+}
+.hentry .commentlist li{
+	background-image:none;
+	padding:0;
+}
+.hentry .commentlist cite{
+	text-align: center;
+}
 .comment .comment .comment-content {
 	background-color:rgba(0, 0, 0, .1);
 }
@@ -690,11 +704,12 @@ footer#colophon .widget ul li {
 	background-color: transparent;
 	padding:0;
 }
-#sidebar .widget_tag_cloud .widget-title:before{
+#sidebar .widget_tag_cloud .widget-title:before,
+#sidebar .tags .widget-title:before{
 	background-image: url(images/header_tags.png);
 	background-color: #6bcbca;
 }
-#sidebar .widget_text .widget-title:before{
+#sidebar .widget_text .widget-title:{
 	background-image:none;
 	background-color: transparent;
 	padding:0;
